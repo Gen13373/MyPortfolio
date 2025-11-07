@@ -1,0 +1,19 @@
+# Netlify configuration for a static portfolio
+[build]
+  publish = "."  # root directory
+  command = ""   # no build step needed for pure static site
+
+# Redirect form submissions to thank-you page
+[[redirects]]
+  from = "/"
+  to = "/"
+  status = 200
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
