@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thanks — Mohannad Taha</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — Mohannad Taha</title>
   <link rel="stylesheet" href="/styles.css" />
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #fafafa;
+      text-align: center;
+      font-family: system-ui, sans-serif;
+      padding: 20px;
+    }
+    .box {
+      max-width: 600px;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #262626;
+    }
+    p {
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .btn:hover {
+      background: #333;
+    }
+  </style>
 </head>
+
 <body>
-  <main class="section">
-    <div class="container" style="text-align:center">
-      <h1>Thanks!</h1>
-      <p class="lead">Your message is on its way. I’ll get back to you soon.</p>
-      <a class="btn" href="/">Home</a>
-    </div>
-  </main>
+  <div class="box">
+    <h1>Thank you for your message!</h1>
+    <p>Your message has been successfully sent. I’ll get back to you as soon as possible.</p>
+    <a class="btn" href="/">Back to Home</a>
+  </div>
 </body>
 </html>

@@ -10,6 +10,7 @@
   <link rel="apple-touch-icon" href="/icons/favicon.png">
   <link rel="stylesheet" href="/styles.css" />
 </head>
+
 <body>
   <header class="site-header">
     <a class="logo" href="#hero" aria-label="Go to top">MT</a>
@@ -34,7 +35,7 @@
         <div class="hero__copy">
           <h1>Hi, I’m <span class="accent">Mohannad Taha</span>.</h1>
           <p class="lead">
-            IT professional specializing in AI integration, cloud computing, and data‑driven solutions.
+            IT professional specializing in AI integration, cloud computing, and data-driven solutions.
             I build clean, useful experiences—no fluff, just impact.
           </p>
           <div class="hero__cta">
@@ -81,13 +82,14 @@
             <img src="/assets/mcmstocks.jpg" alt="Project cover" loading="lazy" width="640" height="360">
             <div class="card__body">
               <h3>MCM Stocks (Trading Simulator)</h3>
-              <p>Microservices + Postgres + JWT auth. Real‑time quotes, portfolios, and admin analytics.</p>
+              <p>Microservices + Postgres + JWT auth. Real-time quotes, portfolios, and admin analytics.</p>
               <div class="card__tags"><span>Node.js</span><span>PostgreSQL</span><span>API</span></div>
               <div class="card__cta">
                 <a href="#" class="link">Live</a>
                 <a href="#" class="link">Code</a>
               </div>
             </div>
+          </article>
         </div>
       </div>
     </section>
@@ -113,16 +115,17 @@
             <span class="muted">Customer Solutions • Present</span>
             <p>Help customers choose the right tech and keep their devices happy.</p>
           </div>
+
           <div class="timeline__item">
-          <h3>Store Manager / Co-Owner — The Best Choice Inc.</h3>
-          <span class="muted">Philadelphia, PA | Aug 2021 – Apr 2022</span>
-          <ul>
-          <li>Directed daily retail operations for 8 employees, increasing efficiency by 25%.</li>
-          <li>Implemented data-driven strategies to boost traffic and profitability.</li>
-          <li>Optimized processes, cutting operational waste and costs by 15%.</li>
-          <li>Managed budgeting, inventory, and vendor relations via digital tracking tools.</li>
-        </ul>
-        </div>
+            <h3>Store Manager / Co-Owner — The Best Choice Inc.</h3>
+            <span class="muted">Philadelphia, PA | Aug 2021 – Apr 2022</span>
+            <ul>
+              <li>Directed daily retail operations for 8 employees, increasing efficiency by 25%.</li>
+              <li>Implemented data-driven strategies to boost traffic and profitability.</li>
+              <li>Optimized processes, cutting operational waste and costs by 15%.</li>
+              <li>Managed budgeting, inventory, and vendor relations via digital tracking tools.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -131,23 +134,38 @@
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
+
+        <!-- WORKING NETLIFY FORM WITH REDIRECT -->
+        <form 
+          name="contact" 
+          method="POST" 
+          data-netlify="true" 
+          netlify-honeypot="bot-field" 
+          action="/thank-you.html"
+          class="form">
+
+          <!-- REQUIRED for Netlify -->
           <input type="hidden" name="form-name" value="contact">
+
           <p class="hidden">
             <label>Don’t fill this out: <input name="bot-field" /></label>
           </p>
+
           <div class="form__row">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
           </div>
+
           <div class="form__row">
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required />
           </div>
+
           <div class="form__row">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
+
           <button class="btn" type="submit">Send</button>
         </form>
       </div>
